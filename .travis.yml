@@ -15,7 +15,7 @@ services:
 - docker
 before_install:
 - if [[ "${TRAVIS_CPU_ARCH}" == "arm64" ]]; then
-      if [[ "${TRAVIS_JDK}" == "openjdk8" ]]; then 
+      if [[ "${TRAVIS_JDK_VERSION}" == "openjdk8" ]]; then 
         sudo apt-get install -y maven openjdk-8-jdk;
       else
         sudo apt-get install -y maven openjdk-11-jdk;
