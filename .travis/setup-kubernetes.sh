@@ -64,9 +64,9 @@ if [ "$TEST_CLUSTER" = "minikube" ]; then
    
    if [ `uname -m` = 'aarch64' ]; then
         if [ "${TEST_MINIKUBE_VERSION:-latest}" = "latest" ]; then
-            TEST_MINIKUBE_URL=https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+            TEST_MINIKUBE_URL=https://storage.googleapis.com/minikube/releases/latest/minikube-linux-arm64
         else
-            TEST_MINIKUBE_URL=https://github.com/kubernetes/minikube/releases/download/${TEST_MINIKUBE_VERSION}/minikube-linux-amd64
+            TEST_MINIKUBE_URL=https://github.com/kubernetes/minikube/releases/download/${TEST_MINIKUBE_VERSION}/minikube-linux-arm64
         fi
     else
         if [ "${TEST_MINIKUBE_VERSION:-latest}" = "latest" ]; then
